@@ -1,0 +1,45 @@
+﻿@model EURBRLModel
+
+@{
+    ViewData["Title"] = "Cotação Euro";
+}
+
+
+<div class="text-center">
+    <h1 class="display-4">Bem vindo a tela de cotação do Euro para Real</h1>
+    <h2>Itens da cotação</h2>
+    <h3>Dolar para Real</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>code</th>
+                <th>codein</th>
+                <th>name</th>
+                <th>high</th>
+                <th>low</th>
+                <th>varBid</th>
+                <th>pctChange</th>
+                <th>bid</th>
+                <th>ask</th>
+                <th>timestamp</th>
+                <th>create_date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.code</td>
+                <td>@Model.codein</td>
+                <td>@Model.name</td>
+                <td>@Model.high</td>
+                <td>@Model.low</td>
+                <td>@Model.varBid</td>
+                <td>@Model.pctChange</td>
+                <td>@Model.bid</td>
+                <td>@Model.ask</td>
+                <td>@Model.timestamp</td>
+                <td>@Model.create_date</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
